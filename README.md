@@ -4,7 +4,7 @@ A modern web frontend for **The English Channel BD**, built with **Next.js, Reac
 
 ## Overview
 
-The frontend uses the Next.js App Router under `src/app` and organizes reusable UI, context/state, actions, libraries, assets, and shared types under `src/`. The current route structure includes public content and user-facing application flows such as books, courses, shop, cart, checkout, gallery, profile, reading, authentication, and staff/admin-oriented areas. fileciteturn36file0turn32file0
+The frontend uses the Next.js App Router under `src/app` and organizes reusable UI, context/state, actions, libraries, assets, and shared types under `src/`. The current route structure includes public content and user-facing application flows such as books, courses, shop, cart, checkout, gallery, profile, reading, authentication, and staff/admin-oriented areas.
 
 ## Tech Stack
 
@@ -22,7 +22,7 @@ The frontend uses the Next.js App Router under `src/app` and organizes reusable 
 | Google GenAI | AI-powered functionality |
 | Sonner | Toast notifications |
 
-The package configuration uses Next.js 16.2.7 and React 19.2.7. fileciteturn31file0
+The project uses Next.js 16.2.7 and React 19.2.7.
 
 ## Main Areas
 
@@ -93,7 +93,7 @@ TheEnglishChannelBD_Frontend/
 
 ## Environment Variables
 
-The project includes environment configuration for **Google Gemini AI** and the application URL. fileciteturn39file0
+The project includes environment configuration for **Google Gemini AI** and the application URL.
 
 ```env
 GEMINI_API_KEY=your-gemini-api-key
@@ -127,7 +127,7 @@ Create your local environment file from `.env.example` and provide the required 
 npm run dev
 ```
 
-The configured development command runs Next.js on port `3000` using Webpack. fileciteturn31file0
+The configured development command runs Next.js on port `3000` using Webpack.
 
 Open:
 
