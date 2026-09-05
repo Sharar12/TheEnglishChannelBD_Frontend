@@ -176,3 +176,5 @@ Any external database, persistent backend service, payment processing, or server
 ## License
 
 This project is distributed under the license included in the repository.
+
+<!-- README refresh: documentation-only change. -->
