@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FDFCFB;
+  --foreground: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.5;
+    box-shadow: 0 0 20px rgba(251, 146, 60, 0.3);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 40px rgba(251, 146, 60, 0.6);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 0%,
+    #e0e0e0 50%,
+    #f0f0f0 100%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced hover effects */
+.group:hover .group-hover\:scale-110 {
+  transform: scale(1.1);
+}
+
+/* 3D perspective for cards */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Glass morphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
